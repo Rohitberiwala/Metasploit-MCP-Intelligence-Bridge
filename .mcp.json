@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "metasploit-mcp": {
+      "command": "uv",
+      "args": ["run", "/absolute/path/to/server.py"],
+      "env": {
+        "MSF_PASSWORD": "msf",
+        "MSF_SERVER": "127.0.0.1",
+        "MSF_PORT": "55553"
+      }
+    }
+  }
+}
