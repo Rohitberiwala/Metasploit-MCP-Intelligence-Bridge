@@ -44,11 +44,30 @@ Ensure you have the following installed:
 ### 2. Start the Metasploit RPC Daemon
 The MCP server needs to talk to Metasploit. Start the RPC server:
 ```bash
-msfrpcd -P msf -S -a 127.0.0.1
+ # 🛡️ Metasploit-MCP: Intelligence Bridge
 
+![Metasploit](https://img.shields.io/badge/Exploit-Metasploit-red)
+![AI](https://img.shields.io/badge/AI-Intelligence-blue)
+![Status](https://img.shields.io/badge/Research-Active-success)
+
+### 🚀 Introduction
+This bridge connects AI agents (Deep AI, Claude, GPT) directly to the **Metasploit Framework**. Using the **Model Context Protocol (MCP)**, the AI can now search, configure, and execute exploits autonomously in a controlled environment.
+
+---
+
+### 📦 Installation & Setup
+
+1. **Start Metasploit RPC Daemon:**
+   ```bash
+   msfrpcd -P msf -S -a 127.0.0.1
+
+
+### how to use:
 
 git clone [https://github.com/Rohitberiwala/Metasploit-MCP-Intelligence-Bridge.git](https://github.com/Rohitberiwala/Metasploit-MCP-Intelligence-Bridge.git)
 cd Metasploit-MCP-Intelligence-Bridge
+pip install pymetasploit3 mcp fastmcp
+
 MSF_PASSWORD=msf uv run server.py
 
-📖 Usage ExamplesOnce connected, you can talk to your AI like a Senior Pentester:TaskPrompt ExampleSearch"Search for modules related to MS17-010 and show me the info for the exploit."Payload"Generate a Linux x64 reverse_tcp payload and save it."Exploit"Run the check for the eternalblue module against 192.168.1.10."Sessions"List all active sessions and tell me the sysinfo of session 1."🛠️ Configuration OptionsEnvironment VariableDefaultDescriptionMSF_PASSWORDmsfPassword for msfrpcd authentication.MSF_SERVER127.0.0.1Host address of your Metasploit RPC server.MCP_TRANSPORTstdioTransport mode (stdio or sse).⚠️ Security DisclaimerThis tool is for educational purposes and authorized security auditing only. Unauthorized access to computer systems is illegal. Always obtain permission before testing.
+
